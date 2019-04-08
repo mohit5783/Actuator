@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:UiHelper="clr-namespace:Actuator.Model.Template.VarHelper"
+                    xmlns:local="clr-namespace:Actuator.StyleResources">
+    <UiHelper:clsTimerForUI x:Key="timerTextBlock"/>
+    <Style TargetType="Button">
+        <Setter Property="Foreground"
+				Value="Black" />
+        <Setter Property="HorizontalAlignment"
+				Value="Stretch" />
+        <Setter Property="VerticalAlignment"
+				Value="Stretch" />
+    </Style>
+    <Style TargetType="ComboBox"></Style>
+    <Style TargetType="TextBox"></Style>
+    <Style TargetType="DatePicker"></Style>
+</ResourceDictionary>

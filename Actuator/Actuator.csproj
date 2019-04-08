@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BF3EDFD-90AF-476E-BDEA-0C7D7598398B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Actuator</RootNamespace>
+    <AssemblyName>Actuator</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ACT.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Mohit\D Drive\Projects\IoT3.0.0\Libraries\ComponentManager\ComponentManager\bin\Debug\ComponentManager.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.WPF, Version=4.7.0.37774, Culture=neutral, PublicKeyToken=0758b07a11a4f466, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FontAwesome.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors">
+      <HintPath>..\packages\MaterialDesignColors.1.1.3\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf">
+      <HintPath>..\packages\MaterialDesignThemes.2.3.0.823\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit.Extended, Version=1.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WPFToolkit.Extended.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AMAActionableObjects.cs" />
+    <Compile Include="FeatureViews\ActionableObjects.xaml.cs">
+      <DependentUpon>ActionableObjects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\ActionView.xaml.cs">
+      <DependentUpon>ActionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\AOMDateView.xaml.cs">
+      <DependentUpon>AOMDateView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\AOMEmailView.xaml.cs">
+      <DependentUpon>AOMEmailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\AOMMessageBoxView.xaml.cs">
+      <DependentUpon>AOMMessageBoxView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\AOMMessageView.xaml.cs">
+      <DependentUpon>AOMMessageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\AOMTimeView.xaml.cs">
+      <DependentUpon>AOMTimeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\ConditionalActionView.xaml.cs">
+      <DependentUpon>ConditionalActionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\DevicesView.xaml.cs">
+      <DependentUpon>DevicesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\EmailSettings.xaml.cs">
+      <DependentUpon>EmailSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\LoopsView.xaml.cs">
+      <DependentUpon>LoopsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\SettingView.xaml.cs">
+      <DependentUpon>SettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\SOAView.xaml.cs">
+      <DependentUpon>SOAView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\SSDsModelView.xaml.cs">
+      <DependentUpon>SSDsModelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\SSDsView.xaml.cs">
+      <DependentUpon>SSDsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImpersonationHelper.cs" />
+    <Compile Include="Model\ActionableObjectModelCollection\AOMDateCollection.cs" />
+    <Compile Include="Model\ActionableObjectModelCollection\AOMEmailCollection.cs" />
+    <Compile Include="Model\ActionableObjectModelCollection\AOMMessageBoxCollection.cs" />
+    <Compile Include="Model\ActionableObjectModelCollection\AOMMessageCollection.cs" />
+    <Compile Include="Model\ActionableObjectModelCollection\AOMTimeCollection.cs" />
+    <Compile Include="Model\ActionableObjectsModel\AOMAsyncExecute.cs" />
+    <Compile Include="Model\ActionableObjectsModel\AOMDataBase.cs" />
+    <Compile Include="Model\ActionableObjectsModel\AOMDate.cs" />
+    <Compile Include="Model\ActionableObjectsModel\AOMEmail.cs" />
+    <Compile Include="Model\ActionableObjectsModel\AOMMessage.cs" />
+    <Compile Include="Model\ActionableObjectsModel\AOMMessageBox.cs" />
+    <Compile Include="Model\ActionableObjectsModel\A1OMResolverDevices.cs" />
+    <Compile Include="Model\ActionableObjectsModel\AOMShellExecute.cs" />
+    <Compile Include="Model\ActionableObjectsModel\A1OMTemplates.cs" />
+    <Compile Include="Model\ActionableObjectsModel\AOMTime.cs" />
+    <Compile Include="Model\ActionModel\ActionableObjectList.cs" />
+    <Compile Include="Model\ActionModel\WorkflowAction.cs" />
+    <Compile Include="Model\ActionModel\WorkflowActionCollection.cs" />
+    <Compile Include="Model\ConditionalActionModel\AllConditionsActions.cs" />
+    <Compile Include="Model\ConditionalActionModel\ConditionAction.cs" />
+    <Compile Include="Model\ConditionalActionModel\ConditionActionCollection.cs" />
+    <Compile Include="Model\ConditionModel\Condition.cs" />
+    <Compile Include="Model\ConditionModel\ConditionsCollection.cs" />
+    <Compile Include="Model\DeviceModel\DeviceNameConverter.cs" />
+    <Compile Include="Model\Helper\htmlcssparser.cs" />
+    <Compile Include="Model\Helper\HtmlFromXamlConverter.cs" />
+    <Compile Include="Model\Helper\htmllexicalanalyzer.cs" />
+    <Compile Include="Model\Helper\HtmlParser.cs" />
+    <Compile Include="Model\Helper\htmlschema.cs" />
+    <Compile Include="Model\Helper\htmltokentype.cs" />
+    <Compile Include="Model\Helper\HtmlToXamlConverter.cs" />
+    <Compile Include="Model\Helper\MarkupConverter.cs" />
+    <Compile Include="Model\Template\clsDesign.cs" />
+    <Compile Include="Model\Template\clsDesignAction.cs" />
+    <Compile Include="Model\Template\clsDesignActionCollection.cs" />
+    <Compile Include="Model\Template\clsDesignCollection.cs" />
+    <Compile Include="Model\Template\clsListViewDesignBackground.cs" />
+    <Compile Include="Model\Template\clsXmlInteraction.cs" />
+    <Compile Include="Model\Template\ContentSwitcher\ISwitchable.cs" />
+    <Compile Include="Model\Template\ContentSwitcher\Switcher.cs" />
+    <Compile Include="Model\Template\ControlCreator\createControl.cs" />
+    <Compile Include="Model\Template\Control\clsButton.cs" />
+    <Compile Include="Model\Template\Control\clsButtonAction.cs" />
+    <Compile Include="Model\Template\Control\clsButtons.cs" />
+    <Compile Include="Model\Template\Control\clsComboBox.cs" />
+    <Compile Include="Model\Template\Control\clsComboBoxes.cs" />
+    <Compile Include="Model\Template\Control\clsControl.cs" />
+    <Compile Include="Model\Template\Control\clsControls.cs" />
+    <Compile Include="Model\Template\Control\clsDatePicker.cs" />
+    <Compile Include="Model\Template\Control\clsDatePickers.cs" />
+    <Compile Include="Model\Template\Control\clsImage.cs" />
+    <Compile Include="Model\Template\Control\clsImages.cs" />
+    <Compile Include="Model\Template\Control\clsObject.cs" />
+    <Compile Include="Model\Template\Control\clsObjects.cs" />
+    <Compile Include="Model\Template\Control\clsTextblock.cs" />
+    <Compile Include="Model\Template\Control\clsTextblocks.cs" />
+    <Compile Include="Model\Template\Control\clsTextBox.cs" />
+    <Compile Include="Model\Template\Control\clsTextBoxes.cs" />
+    <Compile Include="Model\Template\rightMenuViewModel.cs" />
+    <Compile Include="Model\Template\VarHelper\clsTimerForUI.cs" />
+    <Compile Include="Resources\OptionalAttribute.cs" />
+    <Compile Include="Template\ucDesign.xaml.cs">
+      <DependentUpon>ucDesign.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Template\ucDesignParent.xaml.cs">
+      <DependentUpon>ucDesignParent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Template\ucPropertySelected\ucButton.xaml.cs">
+      <DependentUpon>ucButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Template\ucPropertySelected\ucComboBox.xaml.cs">
+      <DependentUpon>ucComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Template\ucPropertySelected\ucImage.xaml.cs">
+      <DependentUpon>ucImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Template\ucPropertySelected\ucMain.xaml.cs">
+      <DependentUpon>ucMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Template\ucPropertySelected\ucTextBlock.xaml.cs">
+      <DependentUpon>ucTextBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Template\ucPropertySelected\ucTextBox.xaml.cs">
+      <DependentUpon>ucTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TextInputToVisibilityConverter.cs" />
+    <Page Include="FeatureViews\ActionableObjects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\ActionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\AOMDateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\AOMEmailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\AOMMessageBoxView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\AOMMessageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\AOMTimeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\ConditionalActionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\ConditionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\DevicesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\EmailSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FeatureViews\LoopsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\SettingView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FeatureViews\SOAView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FeatureViews\SSDsModelView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FeatureViews\SSDsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FeatureViews\Workflow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArrangePanel.cs" />
+    <Compile Include="Feature.cs" />
+    <Compile Include="FeatureCollection.cs" />
+    <Compile Include="FeatureViews\ConditionView.xaml.cs">
+      <DependentUpon>ConditionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\Workflow.xaml.cs">
+      <DependentUpon>Workflow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="StyleResources\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StyleResources\TemplateDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\ucDesign.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\ucDesignParent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\ucPropertySelected\ucButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\ucPropertySelected\ucComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\ucPropertySelected\ucImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\ucPropertySelected\ucMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\ucPropertySelected\ucTextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Template\ucPropertySelected\ucTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\DeviceModel\ACTDataType.cs" />
+    <Compile Include="Model\DeviceModel\Device.cs" />
+    <Compile Include="Model\DeviceModel\DeviceCapabilities.cs" />
+    <Compile Include="Model\DeviceModel\DeviceCollection.cs" />
+    <Compile Include="Model\DeviceModel\DeviceEvent.cs" />
+    <Compile Include="Model\DeviceModel\DeviceEventCollection.cs" />
+    <Compile Include="Model\DeviceModel\DeviceFunction.cs" />
+    <Compile Include="Model\DeviceModel\DeviceFunctionCollection.cs" />
+    <Compile Include="Model\DeviceModel\DeviceProperty.cs" />
+    <Compile Include="Model\DeviceModel\DevicePropertyCollection.cs" />
+    <Compile Include="Model\DeviceModel\FunctionParameter.cs" />
+    <Compile Include="Model\DeviceModel\FunctionParameterCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ACT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ACT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\MenuImages\actionableobjects.png" />
+    <Resource Include="img\MenuImages\device.png" />
+    <Resource Include="img\MenuImages\exit.png" />
+    <Resource Include="img\MenuImages\save.png" />
+    <Resource Include="img\MenuImages\settings.png" />
+    <Resource Include="img\MenuImages\sync.png" />
+    <Resource Include="img\MenuImages\templates.png" />
+    <Resource Include="img\MenuImages\workflow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\MenuImages\personalize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\MenuAction\Action.png" />
+    <Resource Include="img\MenuAction\Condition.png" />
+    <Resource Include="img\MenuAction\Conditional-Action.png" />
+    <Resource Include="img\MenuAction\Loops.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\WorflowActions\condition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ActionableObject\date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ActionableObject\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ActionableObject\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Template\layers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Template\androidstatusbar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Template\RightSideMenu\button.png" />
+    <Resource Include="img\Template\RightSideMenu\dataentry.png" />
+    <Resource Include="img\Template\RightSideMenu\eraser.png" />
+    <Resource Include="img\Template\RightSideMenu\image.png" />
+    <Resource Include="img\Template\RightSideMenu\save.png" />
+    <Resource Include="img\Template\RightSideMenu\textblock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ActionableObject\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\MenuAction\SSDs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\MenuImages\resolver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\MenuImages\ssd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\MenuAction\Devices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\WorflowActions\workflowaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ActionableObject\message.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

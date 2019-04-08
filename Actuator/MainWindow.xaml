@@ -1,0 +1,172 @@
+﻿<Window x:Class="Actuator.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		WindowStyle="None"
+		ResizeMode="NoResize"
+		Title="MainWindow"
+		WindowState="Maximized"
+		Height="650"
+		Width="1225">
+	<Window.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="StyleResources/Styles.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Window.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="48" />
+			<RowDefinition Height="20*" />
+			<RowDefinition Height="1*" />
+		</Grid.RowDefinitions>
+		<!--Title Bar Start-->
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1.2*" />
+				<ColumnDefinition Width="30*" />
+				<ColumnDefinition Width="1.2*" />
+			</Grid.ColumnDefinitions>
+			<Rectangle Fill="{DynamicResource TitleGradient}"
+					   Grid.ColumnSpan="3" />
+			<Button Background="Transparent">
+				<Button.Template>
+					<ControlTemplate>
+						<Image Name="bg"
+							   HorizontalAlignment="Left"
+							   Margin="2"
+							   Source="img/logo.png" />
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+			<TextBlock Text="IoT Middleware - Actuator"
+					   Grid.Column="1"
+					   VerticalAlignment="Center"
+					   HorizontalAlignment="Left"
+					   Margin="2"
+					   FontSize="26"
+					   FontWeight="SemiBold"
+					   Foreground="#FF5FAFFF">
+				<TextBlock.Effect>
+					<DropShadowEffect BlurRadius="3"
+									  Color="Black"
+									  Direction="340"
+									  ShadowDepth="2" />
+				</TextBlock.Effect></TextBlock>
+			<Button Grid.Column="2"
+					Name="BtnExit"
+					Click="BtnExit_Click">
+				<Button.Template>
+					<ControlTemplate>
+						<Image Name="bg"
+							   HorizontalAlignment="Left"
+							   Margin="4"
+							   Source="img/MenuImages/exit.png" />
+					</ControlTemplate>
+				</Button.Template>
+			</Button>
+		</Grid>
+		<!--Title Bar Ends-->
+		<!--Main Content With Menu -->
+		<Grid Grid.Row="1">
+			<Grid.Background>
+				<ImageBrush ImageSource="img/back.jpg"
+							Stretch="UniformToFill" />
+			</Grid.Background>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1*" />
+				<ColumnDefinition Width="4*" />
+			</Grid.ColumnDefinitions>
+			<!--Menu Starts-->
+			<ListBox ItemsSource="{Binding Features}"
+					 BorderBrush="Black"
+					 ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+					 ScrollViewer.VerticalScrollBarVisibility="Hidden"
+					 HorizontalContentAlignment="Stretch"
+					 Margin="5"
+					 BorderThickness="0"
+					 Name="LstAllFeatures"
+					 SelectionChanged="LstAllFeatures_SelectionChanged">
+				<ListBox.Background>
+					<SolidColorBrush Color="White"
+									 Opacity=".3" />
+				</ListBox.Background>
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition />
+								<RowDefinition Height="1" />
+								<RowDefinition />
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="48" />
+								<ColumnDefinition />
+							</Grid.ColumnDefinitions>
+							<Image Source="{Binding Icon}"
+								   Margin="5"
+								   Grid.RowSpan="3" />
+							<TextBlock Grid.Column="1"
+									   Margin="1"
+									   VerticalAlignment="Center"
+									   Text="{Binding Name}"
+									   FontFamily="Corbel"
+									   FontSize="15"
+									   FontWeight="SemiBold" />
+							<Grid Grid.Row="1"
+								  Grid.Column="1"
+								  Background="{DynamicResource TitleGradient}" />
+							<TextBlock Grid.Column="1"
+									   Grid.Row="2"
+									   Margin="1"
+									   VerticalAlignment="Center"
+									   FontFamily="Gabriola"
+									   FontWeight="Light"
+									   Text="{Binding ShortText}"
+									   FontSize="15" />
+						</Grid>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			<!--Menu Ends-->
+			<!--Main Content Starts-->
+			<Grid Name="DetailsPane"
+				  Grid.Column="1"></Grid>
+			<!--Main Content Ends-->
+		</Grid>
+		<!--Main Content With Menu Ends-->
+		<!--Status Bar Starts-->
+		<Grid Grid.Row="2">
+			<Rectangle Fill="{DynamicResource TitleGradient}" />
+			<TextBlock Text="Actuator Status: Currently Active"
+					   Name="Status"
+					   Margin="15,2"
+					   HorizontalAlignment="Left"
+					   FontWeight="ExtraBold"
+					   Foreground="Black"
+					   VerticalAlignment="Center"
+					   FontSize="12">
+				<TextBlock.Triggers>
+					<EventTrigger RoutedEvent="Window.Loaded">
+						<BeginStoryboard>
+							<Storyboard>
+								<DoubleAnimation Storyboard.TargetProperty="(TextBlock.Width)"
+												 From="1.0"
+												 To="1000"
+												 AutoReverse="True"
+												 Duration="0:0:18"
+												 RepeatBehavior="Forever" />
+							</Storyboard>
+						</BeginStoryboard>
+					</EventTrigger>
+				</TextBlock.Triggers>
+				<TextBlock.Effect>
+					<DropShadowEffect BlurRadius="3"
+									  Color="White"
+									  Direction="340"
+									  ShadowDepth="2" />
+				</TextBlock.Effect></TextBlock>
+		</Grid>
+		<!--Status Bar Ends-->
+	</Grid>
+</Window>

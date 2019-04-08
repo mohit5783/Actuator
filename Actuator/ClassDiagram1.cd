@@ -1,0 +1,807 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Actuator.AMAActionableObjects" Collapsed="true">
+    <Position X="11" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAAAAQAACAAAAAAAAAAAAAAAAAgAAAEAAABAEAABCAA=</HashCode>
+      <FileName>AMAActionableObjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.App" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.ArrangePanel" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAICAAAAAAAAAAgAAAAQgEAAAAAAEAQAAAAAAAA=</HashCode>
+      <FileName>ArrangePanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Feature" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAQAAAAAAAAAAAQAAAUAAAA=</HashCode>
+      <FileName>Feature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.FeatureCollection" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>FeatureCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.SafeTokenHandle" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ImpersonationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.ImpersonationHelper">
+    <Position X="9.25" Y="11.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>ImpersonationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAVEACAAGAAAgAAIIIIBAAgABKAABQCgEAASAAAgAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.TextInputToVisibilityConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TextInputToVisibilityConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.ActionableObjects" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAAAAAAABAAAAAAAAAAAAAABAACAAAAAgAAA=</HashCode>
+      <FileName>FeatureViews\ActionableObjects.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.ActionView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEgACAAAEAgAIAAAAQAAgAAAAIAAAUAAhBAACgAAAAA=</HashCode>
+      <FileName>FeatureViews\ActionView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.AOMDateView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAEAAABIACAAAAAAgAgAABCAAAAAABAQAAAFA=</HashCode>
+      <FileName>FeatureViews\AOMDateView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.AOMEmailView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgYQBEBAAEIAagAAAAAIAgAAAGACAAAggAQQAAAA=</HashCode>
+      <FileName>FeatureViews\AOMEmailView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.AOMMessageBoxView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAEABgGIACUAAAAAIAgAAACAAAAAABAQgAIQA=</HashCode>
+      <FileName>FeatureViews\AOMMessageBoxView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.AOMTimeView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAUAQAGIACMAAAAAIBgEFACgCAEAAAAQAAAAA=</HashCode>
+      <FileName>FeatureViews\AOMTimeView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.ConditionalActionView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAIACAAAAhAAAAAAEAEAAgAAgAAIAAAQgAACEAAAAAA=</HashCode>
+      <FileName>FeatureViews\ConditionalActionView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.ConditionView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgACAggEBBAIAAAgQQAgAAQEgAEAEgABBAQCgAAACA=</HashCode>
+      <FileName>FeatureViews\ConditionView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.DevicesView" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="9.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>IAgAAAAAEAAAIAABAQAIgAAAAAAAAEAABBAACgAAAAA=</HashCode>
+      <FileName>FeatureViews\DevicesView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.EmailSettings" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FeatureViews\EmailSettings.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.LoopsView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FeatureViews\LoopsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.SettingView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQgAAA=</HashCode>
+      <FileName>FeatureViews\SettingView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.SOAView" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="11" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAgAAAAAEAAAIAABAQAIgAAAAAAAAEAABBAACgAAAAA=</HashCode>
+      <FileName>FeatureViews\SOAView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.SSDsModelView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAgAAEAAAAAAAAAAQAAgAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>FeatureViews\SSDsModelView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.SSDsView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAAAAAAAAAAAAAAAAAAAAAAAEIAAAAAAAAAA=</HashCode>
+      <FileName>FeatureViews\SSDsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.FeatureViews.Workflow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAAAAAAABAAAAAAAAAAAAAABAAAAAAAAgAAA=</HashCode>
+      <FileName>FeatureViews\Workflow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectModelCollection.AOMDateCollection" Collapsed="true">
+    <Position X="18" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectModelCollection\AOMDateCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectModelCollection.AOMEmailCollection" Collapsed="true">
+    <Position X="4" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectModelCollection\AOMEmailCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectModelCollection.AOMMessageBoxCollection" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectModelCollection\AOMMessageBoxCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectModelCollection.AOMTimeCollection" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectModelCollection\AOMTimeCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectsModel.A1OMResolverDevices" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectsModel\A1OMResolverDevices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectsModel.A1OMTemplates" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectsModel\A1OMTemplates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectsModel.AOMAsyncExecute" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEEAAAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectsModel\AOMAsyncExecute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectsModel.AOMDataBase" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAYAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectsModel\AOMDataBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectsModel.AOMDate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAYAAIAAAIAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectsModel\AOMDate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectsModel.AOMEmail" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACYAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Model\ActionableObjectsModel\AOMEmail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectsModel.AOMMessageBox" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAAEAAAABYAAIAAAAAAAAAAgAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Model\ActionableObjectsModel\AOMMessageBox.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectsModel.AOMShellExecute" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAABAAAI=</HashCode>
+      <FileName>Model\ActionableObjectsModel\AOMShellExecute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionableObjectsModel.AOMTime" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAggAAAYAAIACAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionableObjectsModel\AOMTime.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.ActionModel.ActionableObjectList" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionModel\ActionableObjectList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionModel.WorkflowAction" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAEAAAAAgA=</HashCode>
+      <FileName>Model\ActionModel\WorkflowAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ActionModel.WorkflowActionCollection">
+    <Position X="7.5" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ActionModel\WorkflowActionCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ConditionalActionModel.AllConditionsActions" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Model\ConditionalActionModel\AllConditionsActions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ConditionalActionModel.ConditionAction" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAgA=</HashCode>
+      <FileName>Model\ConditionalActionModel\ConditionAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ConditionalActionModel.ConditionActionCollection">
+    <Position X="21" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Model\ConditionalActionModel\ConditionActionCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ConditionModel.Condition" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAggAAAAAAAAAAAAAAAAAAAAAAAAACAAIgA=</HashCode>
+      <FileName>Model\ConditionModel\Condition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.ConditionModel.ConditionsCollection" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ConditionModel\ConditionsCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.Device" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAIEAAAAAA=</HashCode>
+      <FileName>Model\DeviceModel\Device.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.DeviceCapabilities" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAgAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Model\DeviceModel\DeviceCapabilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.DeviceCollection" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DeviceModel\DeviceCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.DeviceEvent" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DeviceModel\DeviceEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.DeviceEventCollection" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DeviceModel\DeviceEventCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.DeviceFunction" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAACAACAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Model\DeviceModel\DeviceFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.DeviceFunctionCollection" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Model\DeviceModel\DeviceFunctionCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.DeviceNameConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DeviceModel\DeviceNameConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.DeviceProperty" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAKAABAAAA=</HashCode>
+      <FileName>Model\DeviceModel\DeviceProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.DevicePropertyCollection">
+    <Position X="18" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DeviceModel\DevicePropertyCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.FunctionParameter" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Model\DeviceModel\FunctionParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.DeviceModel.FunctionParameterCollection">
+    <Position X="18.25" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\DeviceModel\FunctionParameterCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Helper.HtmlCssParser" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hABkCUQAAMpQgQDgACAhAAMAgkEAwNBAAAgABPAAQBA=</HashCode>
+      <FileName>Model\Helper\htmlcssparser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Helper.CssStylesheet" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAgIAAAAAABAAAAAAAICAAAAAAA=</HashCode>
+      <FileName>Model\Helper\htmlcssparser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Helper.HtmlFromXamlConverter" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AwAAAAAAAAQAEAAAQBgAAAAAAAABAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Helper\HtmlFromXamlConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Helper.HtmlLexicalAnalyzer" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>iiIApABJAAFAAQAgAAAQAAECGBIgAAgBBECAAAAKAAU=</HashCode>
+      <FileName>Model\Helper\htmllexicalanalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Helper.HtmlParser" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABIAEAQAFAgAMAAIAckAQgAAQAAAAGAABAABAI=</HashCode>
+      <FileName>Model\Helper\HtmlParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Helper.HtmlSchema" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQAACBgAQCAAAGABgIgCCABAAAIAABQAABIhGBAA=</HashCode>
+      <FileName>Model\Helper\htmlschema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Helper.HtmlToXamlConverter" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQgoXI4WmE7kBkArASABlABJyaEM+G8CAAJQhw4SvJI=</HashCode>
+      <FileName>Model\Helper\HtmlToXamlConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Helper.MarkupConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Helper\MarkupConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.clsDesign" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIEEIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\clsDesign.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.clsDesignAction" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAQAAAAAAAAAAAQAAAUAAAA=</HashCode>
+      <FileName>Model\Template\clsDesignAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.clsDesignActionCollection">
+    <Position X="20.75" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Model\Template\clsDesignActionCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.clsDesignCollection" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\clsDesignCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.clsListViewDesignBackground" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAACAAAAQAAgAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Model\Template\clsListViewDesignBackground.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.clsXmlInteraction" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAABkBAAAAABAAgABACAAMEkIAAAAAKAAAFQBDCAWA=</HashCode>
+      <FileName>Model\Template\clsXmlInteraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.rightMenuViewModel" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\rightMenuViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.ContentSwitcher.Switcher" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\ContentSwitcher\Switcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsButton" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAACAhAAQEAYAgKAAAAwAEggIAAAAAIEABAIAEpBA=</HashCode>
+      <FileName>Model\Template\Control\clsButton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsButtonAction" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsButtonAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsButtons" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsButtons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsComboBox" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAgAAAAEIIACAAAIAQEggAAAAAAIAABAIAEBAA=</HashCode>
+      <FileName>Model\Template\Control\clsComboBox.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsComboBoxes">
+    <Position X="11.5" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsComboBoxes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAACAAAAAAAgAABAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\Template\Control\clsControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsControls" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsControls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsDatePicker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAgAAAAEIAACAAAIAQAgAAAAAAAIAABAIAEBBA=</HashCode>
+      <FileName>Model\Template\Control\clsDatePicker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsDatePickers" Collapsed="true">
+    <Position X="18" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsDatePickers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsImage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAcICCIAAAAAEggIEAAQgIAAAgAAEBAA=</HashCode>
+      <FileName>Model\Template\Control\clsImage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsImages" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsImages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAACAAAAEAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsObjects" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsObjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsTextblock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAhAAQEEYAgKAAAIAAEggIAAAAAIAAAAAAEpAA=</HashCode>
+      <FileName>Model\Template\Control\clsTextblock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsTextblocks" Collapsed="true">
+    <Position X="18" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsTextblocks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsTextBox" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAACAgAACAEYAACAAAIAAEggIAAAAAIAABAIAEhBA=</HashCode>
+      <FileName>Model\Template\Control\clsTextBox.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Model.Template.Control.clsTextBoxes" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\Control\clsTextBoxes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.ControlCreator.createControl" Collapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGAAAIAAAQEAAEGgQACgEANUAAABACAAAQAgAgAAAQg=</HashCode>
+      <FileName>Model\Template\ControlCreator\createControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Model.Template.VarHelper.clsTimerForUI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAgCAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\VarHelper\clsTimerForUI.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Properties.Resources" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Properties.Settings" Collapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Resources.OptionalAttribute">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Resources\OptionalAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Actuator.Template.ucDesign" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBQAAlQEgAAIBAwgQpgBh0sFmJAABIiDBAAVQBsGRSE=</HashCode>
+      <FileName>Template\ucDesign.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Template.ucDesignParent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAEAAAAAAAAAAAAAAAAgAAAAAAAAAAAQAAAIA=</HashCode>
+      <FileName>Template\ucDesignParent.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Template.ucPropertySelected.ucButton" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAIEgAEAAIAAAEAAIQQAIAACAAEAA=</HashCode>
+      <FileName>Template\ucPropertySelected\ucButton.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Template.ucPropertySelected.ucComboBox" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Template\ucPropertySelected\ucComboBox.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Template.ucPropertySelected.ucImage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAIBEAAAAABAAAAAIAAAAAAAAAEAA=</HashCode>
+      <FileName>Template\ucPropertySelected\ucImage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Template.ucPropertySelected.ucMain" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAEAA=</HashCode>
+      <FileName>Template\ucPropertySelected\ucMain.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Template.ucPropertySelected.ucTextBlock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIEAAEAAAAAAEAAIAYAIAACAAEAA=</HashCode>
+      <FileName>Template\ucPropertySelected\ucTextBlock.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Actuator.Template.ucPropertySelected.ucTextBox" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAIAAAAAAIAIAIAAAAAEAA=</HashCode>
+      <FileName>Template\ucPropertySelected\ucTextBox.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Actuator.Model.Helper.IMarkupConverter" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Helper\MarkupConverter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Actuator.Model.Template.ContentSwitcher.ISwitchable" Collapsed="true">
+    <Position X="2.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Template\ContentSwitcher\ISwitchable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Actuator.Model.ActionableObjectsModel.FileType" Collapsed="true">
+    <Position X="2.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Model\ActionableObjectsModel\AOMShellExecute.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Actuator.Model.DeviceModel.ACTDataType" Collapsed="true">
+    <Position X="0.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAIBgAAAAEAAAgAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Model\DeviceModel\ACTDataType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Actuator.Model.Helper.HtmlTokenType" Collapsed="true">
+    <Position X="4" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAEBAAAAAAAAAAAAAwAJAAAAAAgAAAACAAAAAA=</HashCode>
+      <FileName>Model\Helper\htmltokentype.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

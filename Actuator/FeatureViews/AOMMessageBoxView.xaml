@@ -1,0 +1,294 @@
+﻿<UserControl x:Class="Actuator.FeatureViews.AOMMessageBoxView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Actuator.FeatureViews"
+             mc:Ignorable="d" 
+			 xmlns:c="clr-namespace:Actuator"
+			 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+			 xmlns:aomMessageBox="clr-namespace:Actuator.Model.ActionableObjectsModel"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ControlTemplate x:Key="MessageBoxAutoArrangeList">
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+						  Background="Transparent">
+                <c:ArrangePanel IsItemsHost="True"
+								ItemSize="120" />
+            </ScrollViewer>
+        </ControlTemplate>
+        <ControlTemplate x:Key="IconTemplate"
+						 TargetType="{x:Type ContentControl}">
+            <Grid  Width="{TemplateBinding Width}"
+				   Margin="0,0,6,6"
+				   Background="Transparent"
+				   Height="{TemplateBinding Height}">
+                <Rectangle RadiusX="4"
+						   RadiusY="4"
+						   Margin="3"
+						   x:Name="highlight"
+						   Fill="Transparent" />
+                <Rectangle RadiusX="4"
+						   RadiusY="4"
+						   Stroke="DarkGray">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1"
+											 StartPoint="0.5,0">
+                            <GradientStop Color="#3FFFFFFF" />
+                            <GradientStop Color="Transparent"
+										  Offset="0.5" />
+                            <GradientStop Color="#A0000000"
+										  Offset="1" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Viewbox Stretch="Uniform"
+						 Margin="5">
+                    <ContentPresenter />
+                </Viewbox>
+                <Rectangle Fill="Transparent" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=".17*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="6*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".17*" />
+                        <ColumnDefinition Width="6.85*" />
+                        <ColumnDefinition Width=".17*" />
+                    </Grid.ColumnDefinitions>
+                    <Border CornerRadius="3,3,0,0"
+							Opacity=".5"
+							Grid.Row="1"
+							Grid.Column="1">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint=".5,0"
+												 EndPoint=".5,1">
+                                <GradientStop Color="White" />
+                                <GradientStop Color="White"
+											  Offset=".2" />
+                                <GradientStop Color="Transparent"
+											  Offset=".95" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                </Grid>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver"
+						 Value="true">
+                    <Setter Property="Fill"
+							Value="LightGray"
+							TargetName="highlight" />
+                </Trigger>
+                <EventTrigger RoutedEvent="MouseDown">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="Gray"
+											Duration="0:0:0.050"
+											Storyboard.TargetName="highlight"
+											Storyboard.TargetProperty="Fill.Color" />
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="highlight"
+														  Storyboard.TargetProperty="Fill.Color">
+                                <DiscreteColorKeyFrame Value="Gray"
+													   KeyTime="0:0:0" />
+                            </ColorAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseUp">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="LightGray"
+											Duration="0:0:0.100"
+											Storyboard.TargetName="highlight"
+											Storyboard.TargetProperty="Fill.Color" />
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetName="highlight"
+														  Storyboard.TargetProperty="Fill.Color">
+                                <DiscreteColorKeyFrame Value="LightGray"
+													   KeyTime="0:0:0" />
+                            </ColorAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <DataTemplate DataType="{x:Type aomMessageBox:AOMMessageBox}">
+            <ContentControl Template="{StaticResource IconTemplate}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Image Source="../img/ActionableObject/chat.png"
+						   Grid.Row="1"
+						   MaxHeight="64"
+						   Stretch="Uniform"
+						   x:Name="image"
+						   Margin="10,2,10,2" />
+                    <StackPanel Grid.Row="2">
+                        <TextBlock Text="{Binding MessageValue}"
+								   FontWeight="SemiBold"
+								   FontSize="14"
+								   HorizontalAlignment="Center"
+								   Margin="4,0,4,2" />
+                    </StackPanel>
+                </Grid>
+            </ContentControl>
+        </DataTemplate>
+
+        <SolidColorBrush x:Key="brushWatermarkBackground" Color="White" />
+        <SolidColorBrush x:Key="brushWatermarkBorder" Color="Indigo" />
+
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <c:TextInputToVisibilityConverter x:Key="TextInputToVisibilityConverter" />
+
+        <Style x:Key="EntryFieldStyle" TargetType="Grid" >
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="32" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Create MessageBox"
+					   VerticalAlignment="Center"
+					   Margin="5"
+					   FontWeight="SemiBold"
+					   FontSize="16" />
+            <Button Background="Transparent"
+					Name="AddMessageBox"
+					Click="AddMessageBox_Click"
+					Grid.Column="1">
+                <Button.Content>
+                    <Image Source="../img/Add.png" />
+                </Button.Content>
+            </Button>
+        </Grid>
+        <!--Main Content Starts-->
+        <ItemsControl ItemsSource="{Binding AOMMessageBoxes}"
+					  Grid.Row="1"
+					  Template="{StaticResource MessageBoxAutoArrangeList}"
+                      Name="messageBoxItemControl"
+                      PreviewMouseLeftButtonDown="messageBoxItemControl_PreviewMouseLeftButtonDown"/>
+        <Grid Grid.Row="1"
+			  Name="MessageBoxGrid"
+			  Visibility="Collapsed"
+			  Background="#77000000"
+			  ShowGridLines="True">
+            <materialDesign:Card  Width="250"
+				                  VerticalAlignment="Center"
+                                  HorizontalAlignment="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0"
+                            Background="Black">
+                        <Button Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" 
+                                HorizontalAlignment="Right" 
+                                VerticalAlignment="Top"
+                                Margin="5"
+                                Height="20"
+                                Width="20"
+                                Name="btnCloseGrid"
+                                Click="btnCloseGrid_Click">
+                            <materialDesign:PackIcon Kind="Close" />
+                        </Button>
+                        <TextBlock Text="Create MessageBox"
+                                   HorizontalAlignment="Center"
+						           FontWeight="SemiBold"
+						           FontSize="15"
+						           Padding="7"
+						           Foreground="White"
+						           Margin="5" />
+                    </Grid>
+                    <TextBlock Grid.Row="1"
+                             Height="15"/>
+                    <Grid Grid.Row="2" 
+                          Background="{StaticResource brushWatermarkBackground}" 
+                          Style="{StaticResource EntryFieldStyle}" >
+                        <TextBlock Margin="0,6" 
+                                   Text="Enter your message here..." 
+                                   Visibility="{Binding ElementName=tboxUserMessage, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                        <TextBox Name="tboxUserMessage"
+                                 TextWrapping="Wrap"
+                                 Background="Transparent" 
+                                 BorderBrush="{StaticResource brushWatermarkBorder}" />
+                    </Grid>
+                    <Grid Grid.Row="3"
+                          Margin="5">
+                        <CheckBox Checked="CheckBox_Checked"
+                                  Name="cbTimeBased"
+                                  Unchecked="CheckBox_Unchecked"
+                                  HorizontalAlignment="Right">
+                            <TextBlock Text="Time Based" Margin="0,-2,0,0"/>
+                        </CheckBox>
+                    </Grid>
+                    <Grid Grid.Row="4"
+                          Name="gridTimeBased"
+                          Visibility="Collapsed"
+                          Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                        <TextBlock HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="14"
+                                   Text="SET DURATION"/>
+                        <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                            <TextBox Text="{Binding Minutes}"
+                                     FontSize="13"
+                                     Width="40"
+                                     TextAlignment="Center"
+                                     VerticalAlignment="Center"
+                                     HorizontalAlignment="Right"/>
+                            <TextBlock Grid.Column="1"
+                                       Text=":"
+                                       FontSize="13"
+                                       Margin="0,0,0,3"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="2"
+                                     Text="{Binding Seconds}"
+                                     FontSize="13"
+                                     Width="40"
+                                     TextAlignment="Center"
+                                     VerticalAlignment="Center"
+                                     HorizontalAlignment="Left"/>
+                        </Grid>
+                    </Grid>
+                    <Button Content="{Binding btnContent}"
+						    FontSize="14"
+						    Name="btnCreateMessageBox"
+						    Click="btnCreateMessageBox_Click"
+						    Grid.Row="5"
+						    Margin="5"
+                            Height="30"/>
+                </Grid>
+            </materialDesign:Card>
+        </Grid>
+        <!--Main Content Ends-->
+    </Grid>
+</UserControl>
